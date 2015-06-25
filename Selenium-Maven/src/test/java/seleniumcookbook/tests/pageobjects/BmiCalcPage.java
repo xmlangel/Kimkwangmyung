@@ -10,4 +10,9 @@ public class BmiCalcPage {
 	public WebElement Calculate;
 	public WebElement bmi;
 	public WebElement bmi_category;
+	
+	public BmiCalcPage(WebDriver driver)
+	{
+		PageFactory.initElements(driver, this);
+	}
 }
