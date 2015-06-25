@@ -19,7 +19,7 @@ public class BmiCalcPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	protected void load() {
+	public void load() {
 		this.driver.get(url);
 	}
 	
