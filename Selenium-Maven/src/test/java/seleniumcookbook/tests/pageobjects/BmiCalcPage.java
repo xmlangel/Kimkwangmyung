@@ -14,8 +14,31 @@ public class BmiCalcPage {
 	private WebDriver driver;
 	private String url = "http://dl.dropbox.com/u/55228056/bmicalculator.html";
 	
-	public BmiCalcPage(WebDriver driver)
-	{
+	public BmiCalcPage() {
+		driver = new ChromeDriver();
 		PageFactory.initElements(driver, this);
 	}
+	
+	protected void load() {
+		this.driver.get(url);
+	}
+	
+	public void calculateBmi(String height, String weight) {
+		heightCMS.sendKeys(height);
+		weightKg.sendKeys(weight);
+		Calculate.click();
+	}
+	
+	public String getBmi() {
+		return bmi.getAttribute("value");
+	}
+	
+	public String getBmiCategory() {
+		return bmi_category.getAttribute("value");
+	}
+	
+	public void close() {
+		this.driver.close();
+	}
+	
 }
