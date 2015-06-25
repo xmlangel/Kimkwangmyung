@@ -4,7 +4,7 @@
 <suite name="Web_Suite">
   <test name="DeskTopWeb">
     <classes>
-       <class name="com.yogiyo.selenium.tests.DeskTopWebWebDriver"/>
+       <class name="com.km.selenium.tests.DeskTopWebWebDriver"/>
 	    <methods>
         <include name="Real_SMS_Relay" />
       </methods>
@@ -12,7 +12,7 @@
   </test>
   <test name="ChangeResultCode_DeskTopWeb">
     <classes>
-       <class name="com.yogiyo.selenium.tests.ChangeResultCodeWebDriver"/>
+       <class name="com.km.selenium.tests.ChangeResultCodeWebDriver"/>
 	    <methods>
         <include name="ChangeResultCode_Real" />
       </methods>

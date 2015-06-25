@@ -4,7 +4,7 @@
 <suite name="Web_Suite">
   <test name="App">
     <classes>
-       <class name="com.yogiyo.selenium.tests.AndroidWebDriver"/>
+       <class name="com.km.selenium.tests.AndroidWebDriver"/>
 	    <methods>
         <include name="mobile_App" />
       </methods>
@@ -12,7 +12,7 @@
   </test>
     <test name="ChangeResultCode_mobile_App">
     <classes>
-       <class name="com.yogiyo.selenium.tests.ChangeResultCodeWebDriver"/>
+       <class name="com.km.selenium.tests.ChangeResultCodeWebDriver"/>
 	    <methods>
         <include name="ChangeResultCode_Real" />
       </methods>
@@ -20,7 +20,7 @@
   </test>
   <test name="MobileWeb">
     <classes>
-       <class name="com.yogiyo.selenium.tests.MobileWebWebDriver"/>
+       <class name="com.km.selenium.tests.MobileWebWebDriver"/>
 	    <methods>
         <include name="mobileWeb_Real" />
       </methods>
@@ -28,7 +28,7 @@
   </test>     
   <test name="ChangeResultCode_mobileWeb">
     <classes>
-       <class name="com.yogiyo.selenium.tests.ChangeResultCodeWebDriver"/>
+       <class name="com.km.selenium.tests.ChangeResultCodeWebDriver"/>
 	    <methods>
         <include name="ChangeResultCode_Real" />
       </methods>
@@ -36,7 +36,7 @@
   </test> 
   <test name="DeskTopWeb">
     <classes>
-       <class name="com.yogiyo.selenium.tests.DeskTopWebWebDriver"/>
+       <class name="com.km.selenium.tests.DeskTopWebWebDriver"/>
 	    <methods>
         <include name="Real_SMS_Relay" />
       </methods>
@@ -44,7 +44,7 @@
   </test>     
   <test name="ChangeResultCode_DeskTopWeb">
     <classes>
-       <class name="com.yogiyo.selenium.tests.ChangeResultCodeWebDriver"/>
+       <class name="com.km.selenium.tests.ChangeResultCodeWebDriver"/>
 	    <methods>
         <include name="ChangeResultCode_Real" />
       </methods>

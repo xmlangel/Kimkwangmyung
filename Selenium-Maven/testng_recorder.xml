@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite1">
-  <test name="exampletest1">
+<suite name="MobileWeb_Straing">
+  <test name="MobileWeb">
     <classes>
-       <class name="com.yogiyo.selenium.tests.MobileWebWebDriver"/>
+       <class name="com.km.selenium.tests.DeskTopWebWebDriver"/>
 	    <methods>
-        <include name="mobileWeb_Real" />
+        <include name="Record" />
       </methods>
     </classes>
   </test>  

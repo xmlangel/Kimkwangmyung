@@ -4,7 +4,7 @@
 <suite name="MobileWeb_Straing">
   <test name="MobileWeb">
     <classes>
-       <class name="com.yogiyo.selenium.tests.MobileWebWebDriver"/>
+       <class name="com.km.selenium.tests.MobileWebWebDriver"/>
 	    <methods>
         <include name="mobileWeb_Staging" />
       </methods>
@@ -12,7 +12,7 @@
   </test>  
   <test name="ChangeResultCode_mobileWeb">
     <classes>
-       <class name="com.yogiyo.selenium.tests.ChangeResultCodeWebDriver"/>
+       <class name="com.km.selenium.tests.ChangeResultCodeWebDriver"/>
 	    <methods>
         <include name="ChangeResultCode_Staging" />
       </methods>

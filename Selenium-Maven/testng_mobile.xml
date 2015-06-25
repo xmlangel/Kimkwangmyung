@@ -4,7 +4,7 @@
 <suite name="Web_Suite">
   <test name="Web">
     <classes>
-       <class name="com.yogiyo.selenium.tests.AndroidWebDriver"/>
+       <class name="com.km.selenium.tests.AndroidWebDriver"/>
 	    <methods>
         <include name="mobile_App" />
       </methods>
