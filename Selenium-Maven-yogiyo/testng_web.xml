@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Web_Suite">
+  <test name="DeskTopWeb">
+    <classes>
+       <class name="com.yogiyo.selenium.tests.DeskTopWebWebDriver"/>
+	    <methods>
+        <include name="Real_SMS_Relay" />
+      </methods>
+    </classes>
+  </test>
+  <test name="ChangeResultCode_DeskTopWeb">
+    <classes>
+       <class name="com.yogiyo.selenium.tests.ChangeResultCodeWebDriver"/>
+	    <methods>
+        <include name="ChangeResultCode_Real" />
+      </methods>
+    </classes>
+  </test>    
+</suite>

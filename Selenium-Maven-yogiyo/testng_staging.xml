@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MobileWeb_Straing">
+  <test name="MobileWeb">
+    <classes>
+       <class name="com.yogiyo.selenium.tests.MobileWebWebDriver"/>
+	    <methods>
+        <include name="mobileWeb_Staging" />
+      </methods>
+    </classes>
+  </test>  
+  <test name="ChangeResultCode_mobileWeb">
+    <classes>
+       <class name="com.yogiyo.selenium.tests.ChangeResultCodeWebDriver"/>
+	    <methods>
+        <include name="ChangeResultCode_Staging" />
+      </methods>
+    </classes>
+  </test> 
+</suite>  	

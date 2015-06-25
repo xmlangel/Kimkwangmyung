@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Web_Suite">
+  <test name="Web">
+    <classes>
+       <class name="com.yogiyo.selenium.tests.AndroidWebDriver"/>
+	    <methods>
+        <include name="mobile_App" />
+      </methods>
+    </classes>
+  </test>  
+</suite>
