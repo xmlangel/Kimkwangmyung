@@ -1,29 +1,30 @@
 package seleniumcookbook.tests;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
 
+import static org.junit.Assert.*;
 import seleniumcookbook.tests.pageobjects.*;
 
-public class BmiCalculatorTests{
-	
+public class BmiCalculatorTests {
+
 	@Test
 	public void testBmiCalculation()
 	{
-		//BmiCalcPage 인스턴스를 만들고 드라이버를 초기화한다.
+		//Create an instance of Bmi Calculator Page class
+		//and provide the driver
 		BmiCalcPage bmiCalcPage = new BmiCalcPage();
 		
-		//Bmi 계산기 페이지를 연다.
-		bmiCalcPage.load();
-		
-		//키와 몸무게를 입력해 Bmi를 계산한다.
+		//Open the Bmi Calculator Page
+		bmiCalcPage.get();
+
+		//Calculate the Bmi by supplying Height and Weight values
 		bmiCalcPage.calculateBmi("181", "80");
+
+		//Verify Bmi & Bmi Category values
+		assertEquals("24.4", bmiCalcPage.getBmi());
+		assertEquals("Normal", bmiCalcPage.getBmiCategory());
 		
-		//계산결과로 나타난 Bmi 값과 법주를 확인한다.
-		assertEquals("22.4",bmiCalcPage.getBmi());
-		assertEquals("Normal",bmiCalcPage.getBmiCategory());
-		
-		//페이지를 닫는다.
+		//Close the Bmi Calculator Page
 		bmiCalcPage.close();
 	}
 }

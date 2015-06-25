@@ -4,8 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.LoadableComponent;
+import static org.junit.Assert.*;
 
-public class BmiCalcPage {
+public class BmiCalcPage extends LoadableComponent<BmiCalcPage> {
+	
 	private WebElement heightCMS;
 	private WebElement weightKg;
 	private WebElement Calculate;
@@ -13,14 +16,21 @@ public class BmiCalcPage {
 	private WebElement bmi_category;
 	private WebDriver driver;
 	private String url = "http://dl.dropbox.com/u/55228056/bmicalculator.html";
+	private String title = "BMI Calculator";
 	
 	public BmiCalcPage() {
 		driver = new ChromeDriver();
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void load() {
+	@Override
+	protected void load() {
 		this.driver.get(url);
+	}
+	
+	@Override
+	protected void isLoaded()  {
+		assertTrue(driver.getTitle().equals(title));
 	}
 	
 	public void calculateBmi(String height, String weight) {
@@ -40,5 +50,4 @@ public class BmiCalcPage {
 	public void close() {
 		this.driver.close();
 	}
-	
 }
