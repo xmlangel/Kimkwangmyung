@@ -1,4 +1,4 @@
-Selenium-Maven-Yogiyo
+Selenium-Maven
 =======================
 
 A maven template for Selenium that has the latest dependencies so that you can just check out and start writing tests in five easy steps.
